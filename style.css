@@ -12,6 +12,7 @@
 html,body{
     height: 100%;
     font-family: Roboto;
+    font-size: 16px;
 }
 .container{
     width: 100%;
@@ -72,10 +73,6 @@ html,body{
     }
 }
 
-
-
-
-
 .contents{
     display: grid;
     grid-template-rows: 120px 1fr;
@@ -83,7 +80,57 @@ html,body{
 .header{
     background-color: var(--color-two);
     box-shadow: 0px 1px 15px 0px rgba(68, 67, 67, 0.329);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
    
+    
+    img{
+        width: 40px;
+    };
+}
+
+.upper{
+    display: grid;
+    grid-template-columns: 1fr 40px 250px; 
+}
+svg{
+    width: 20px;
+}
+.search{
+    display: flex;
+    padding: 20px 50px;
+
+    input{
+        font-size: 16px;
+        border: none;
+        width: 400px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: var(--color-three);
+        margin-left: 5px;
+    }
+}
+
+.notified{
+    padding-top: 20px;
+}
+
+.login{
+    display: flex;
+    padding-top: 12px;
+
+    img{
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.616);
+    }
+    p{
+        margin: 12px;
+        font-weight: 500;
+    }
+}
+.lower{
+    background-color: black;
 }
 .body_content{
     background-color: var(--color-three);
