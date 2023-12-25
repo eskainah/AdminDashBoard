@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
 :root{
-    --color-one: rgba(10, 126, 172, 0.89);
+    --color-one: #1484CD;
     --color-two: #fff;
     --color-three: rgba(105, 100, 100, 0.281);
 }
@@ -81,13 +81,7 @@ html,body{
     background-color: var(--color-two);
     box-shadow: 0px 1px 15px 0px rgba(68, 67, 67, 0.329);
     display: grid;
-    grid-template-rows: 1fr 1fr;
-
-   
-    
-    img{
-        width: 40px;
-    };
+    grid-template-rows: 1fr 1fr; 
 }
 
 .upper{
@@ -118,20 +112,55 @@ svg{
 
 .login{
     display: flex;
-    padding-top: 12px;
+    padding-top: 15px;
 
     img{
+        width: 30px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.616);
     }
     p{
-        margin: 12px;
+        margin: 6px;
         font-weight: 500;
     }
 }
 .lower{
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 350px; 
+}
+.active_user{
+    display: flex;
+    padding-top: 5px;
+
+    img{
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.616);
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    span{
+        font-size: 12px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    p{
+        margin: 5px 10px;
+    }
+}
+.rec_ctrl{
+    display: flex;
+    button{
+        width: 60px;
+        height: 20px;
+        margin: 17px 8px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        background-color: var(--color-one);
+    }
 }
 .body_content{
     background-color: var(--color-three);
+    
 }
