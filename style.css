@@ -165,11 +165,13 @@ svg{
     background-color: var(--color-three);
     display: grid;
     grid-template-columns: 1fr 300px;
+    color: rgba(0, 0, 0, 0.856);
     
 }
 .main_content{
     display: grid;
     grid-template-rows: 30px 1fr;
+   
     h4{
         margin-left: 30px;
         margin-top: 14px;
@@ -210,6 +212,7 @@ svg{
 .updates{
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
 
     h4{
         font-size: 14px;
@@ -217,10 +220,22 @@ svg{
     }
     .update_card{
         height: 200px;
-        width: 250px;
+        width: 200px;
         border-radius: 10px;
         background-color: var(--color-two);
         box-shadow: 0px 1px 15px 0px rgba(77, 76, 76, 0.836);
         margin: 0px 0px 5px 0px;
+    }
+}
+
+.annoucement{
+    article{
+        margin: 12px;
+        height: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.603);
+        font-size: 10px;
+        span{
+            font-weight: bold;
+        }
     }
 }
