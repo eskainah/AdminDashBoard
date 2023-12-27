@@ -203,6 +203,13 @@ svg{
     height: 140px;
     display: grid;
     grid-template-rows: 1fr 25px;
+
+    p{
+        margin: 20px;
+    }
+    span{
+        font-weight: bold;  
+    }
 }
 .updates{
     display: flex;
