@@ -3,6 +3,7 @@
     --color-one: #1484CD;
     --color-two: #fff;
     --color-three: rgba(105, 100, 100, 0.281);
+    --color-four: #996515; 
 }
 *{
     margin: 0;
@@ -136,7 +137,7 @@ svg{
         width: 40px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.616);
-        margin-top: 5px;
+        margin-top: 2px;
         margin-left: 50px;
     }
     span{
@@ -145,7 +146,7 @@ svg{
         font-weight: bold;
     }
     p{
-        margin: 5px 10px;
+        margin: 2px 10px;
     }
 }
 .rec_ctrl{
@@ -162,5 +163,61 @@ svg{
 }
 .body_content{
     background-color: var(--color-three);
+    display: grid;
+    grid-template-columns: 1fr 300px;
     
+}
+.main_content{
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    h4{
+        margin-left: 30px;
+        margin-top: 14px;
+        font-size: 12px;
+    }
+
+    .cards_holder{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .right {
+        margin-right: 30px;
+    }
+    .reaction{
+        display: flex;
+        justify-content: flex-end;
+
+        svg{
+            margin-right: 15px;
+        }
+    }
+}
+.cards{
+    background-color: var(--color-two);
+    box-shadow: 0px 1px 15px 0px rgba(77, 76, 76, 0.836);
+    border-left: 5px solid var(--color-four);
+    margin-left: 30px;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 25px;
+}
+.updates{
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .update_card{
+        height: 200px;
+        width: 250px;
+        border-radius: 10px;
+        background-color: var(--color-two);
+        box-shadow: 0px 1px 15px 0px rgba(77, 76, 76, 0.836);
+        margin: 0px 0px 5px 0px;
+    }
 }
