@@ -182,10 +182,6 @@ svg{
        
         grid-template-rows: repeat(3, 1fr);
     }
-
-    .right {
-        margin-right: 30px;
-    }
     .reaction{
         display: flex;
         justify-content: flex-end;
