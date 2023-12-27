@@ -2,7 +2,7 @@
 :root{
     --color-one: #1484CD;
     --color-two: #fff;
-    --color-three: rgba(105, 100, 100, 0.281);
+    --color-three: #1483cd2c;
     --color-four: #996515; 
 }
 *{
@@ -238,4 +238,28 @@ svg{
             font-weight: bold;
         }
     }
+}
+.trends{
+    article{
+        margin: 12px;
+        height: 35px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.603);
+        font-size: 10px;
+        span{
+            font-weight: bold;
+        }
+        div{
+            display: flex;
+        }
+        p{
+            margin-top: 7px;
+        }
+        img{
+            margin: 5px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.616);
+
+        }
+}
 }
